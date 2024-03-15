@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --swiper-pagination-color: #ffffff;
+    --swiper-pagination-bullet-inactive-color: #666666;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    --swiper-naviagtion-color: #ffffff;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0e88c9;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -3px;
+  background-color: #0e88c9;
+  border-radius: 2px;
+  transition: 0.5s all;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    padding: 30px;
+    border-radius: 50%;
+    right: 0;
+}
+
+.up-arrow{
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px 2px rgb(223, 223, 223);
+}
+
+.h-container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    font-size: 30px;
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.card{
+    width: 350px;
+    height: auto;
+    box-shadow: 0 0 10px 1px rgb(249, 249, 249);
+    padding: 15px;
+    border-radius: 10px;
+    transition: .5s all;
+}
+
+.card .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
+}
+
+.card .image{
+    margin-top: 10px;
+    width: 350px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .desc{
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+}
+
+
