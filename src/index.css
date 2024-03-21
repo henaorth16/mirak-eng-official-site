@@ -46,10 +46,11 @@ nav ul li a:hover::after {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: white;
+    color: rgb(167, 167, 167);
     padding: 30px;
     border-radius: 50%;
     right: 0;
+    text-shadow: 2px 2px #fff;
 }
 
 .up-arrow{

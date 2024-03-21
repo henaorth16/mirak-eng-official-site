@@ -30,19 +30,19 @@ const NavBar = () => {
         <span className="text-logo">MIRAK</span>ENGINEERING
       </h1>
       <ul className="items-center gap-7 px-5 font-semibold cursor-pointer hidden md:flex">
-        <li className="text-xs transition-all duration-500">
+        <li className="text-sm transition-all duration-500">
           <a href="#">HOME</a>
         </li>
-        <li className="text-xs transition-all duration-500">
+        <li className="text-sm transition-all duration-500">
           <a href="#about">ABOUT</a>
         </li>
-        <li className="text-xs transition-all duration-500">
+        <li className="text-sm transition-all duration-500">
           <a href="#services">SERVICES</a>
         </li>
-        <li className="text-xs transition-all duration-500">
+        <li className="text-sm transition-all duration-500">
           <a href="">PROJECTS</a>
         </li>
-        <li className="text-xs transition-all duration-500">
+        <li className="text-sm transition-all duration-500">
           <a href="">CLIENTS</a>
         </li>
       </ul>
