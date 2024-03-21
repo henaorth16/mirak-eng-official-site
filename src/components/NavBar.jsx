@@ -1,5 +1,6 @@
 import img from "../assets/logo.png";
 import { useState } from "react";
+import { useScroll } from "../hook/useScroll";
 import { RiMenu2Line } from "react-icons/ri";
 import { IoMdHome } from "react-icons/io";
 import { FaCircleInfo } from "react-icons/fa6";
@@ -8,7 +9,6 @@ import { FaDiagramProject } from "react-icons/fa6";
 import { FaUserFriends } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import { useScroll } from "../hook/useScroll";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
@@ -53,35 +53,40 @@ const NavBar = () => {
       >
         CONTACT
       </a>
-      <RiMenu2Line onClick={()=>setOpen(true)} className="md:hidden" />
-      <div className={`absolute md:hidden w-full bg-white left-0 top-0 ${ open? "flex" : "hidden" } justify-between p-5 shadow-lg`}>
-        <ul className="gap-7 text-black font-semibold cursor-pointer flex flex-col ">
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <IoMdHome className="text-black" />
-            <a onClick={()=>setOpen(false)} href="#">HOME</a>
+
+
+
+      <RiMenu2Line onClick={() => setOpen(true)} className="md:hidden cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200" />
+      <div className={`absolute w-full bg-white left-0 top-0 ${open ? "flex" : "hidden"} justify-between p-5 shadow-lg`}>
+
+        <ul className="w-full text-black font-semibold cursor-pointer flex flex-col items-center">
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href="#"><IoMdHome className="text-xl text-gray-800" />HOME</a>
           </li>
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <FaCircleInfo className="text-black" />
-            <a onClick={()=>setOpen(false)} href="#about">ABOUT</a>
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href="#about"><FaCircleInfo className="text-xl text-gray-800" />ABOUT</a>
           </li>
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <GrServices className="text-black" />
-            <a onClick={()=>setOpen(false)} href="">SERVICES</a>
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href="#services"><GrServices className="text-xl text-gray-800" />SERVICES</a>
           </li>
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <FaDiagramProject className="text-black" />
-            <a onClick={()=>setOpen(false)} href="">PROJECTS</a>
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href="#projects"><FaDiagramProject className="text-xl text-gray-800" />PROJECTS</a>
           </li>
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <FaUserFriends className="text-black" />
-            <a onClick={()=>setOpen(false)} href="">CLIENTS</a>
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href=""><FaUserFriends className="text-xl text-gray-800" />CLIENTS</a>
           </li>
-          <li className="text-xs transition-all duration-500 flex items-center gap-3">
-            <RiCustomerService2Fill className="text-black" />
-            <a onClick={()=>setOpen(false)} href="#contact">CONTACT</a>
+
+          <li className=" transition-all w-full duration-500 py-2">
+            <a className="w-full flex gap-3 justify-center" onClick={() => setOpen(false)} href="#contact"><RiCustomerService2Fill className="text-xl text-gray-800" />CONTACT</a>
           </li>
+
         </ul>
-        <IoClose onClick={()=>setOpen(false)} className="text-black cursor-pointer"/>
+        <IoClose onClick={() => setOpen(false)} className="text-black cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200" />
       </div>
     </nav>
   );
