@@ -43,7 +43,7 @@ const NavBar = () => {
           <a href="">PROJECTS</a>
         </li>
         <li className="text-sm transition-all duration-500">
-          <a href="">CLIENTS</a>
+          <a href="#clients">CLIENTS</a>
         </li>
       </ul>
 
@@ -56,7 +56,7 @@ const NavBar = () => {
 
 
 
-      <RiMenu2Line onClick={() => setOpen(true)} className="md:hidden cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200" />
+      <RiMenu2Line onClick={() => setOpen(true)} className="md:hidden cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200 hover:bg-opacity-50" />
       <div className={`absolute w-full bg-white left-0 top-0 ${open ? "flex" : "hidden"} justify-between p-5 shadow-lg`}>
 
         <ul className="w-full text-black font-semibold cursor-pointer flex flex-col items-center">
@@ -86,7 +86,7 @@ const NavBar = () => {
           </li>
 
         </ul>
-        <IoClose onClick={() => setOpen(false)} className="text-black cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200" />
+        <IoClose onClick={() => setOpen(false)} className="text-black cursor-pointer text-3xl p-1 rounded-full hover:bg-gray-200 hover:bg-opacity-50" />
       </div>
     </nav>
   );

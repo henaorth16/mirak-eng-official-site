@@ -10,6 +10,7 @@ import About from "./components/About";
 import Up from "./components/Up";
 import { useScroll } from "./hook/useScroll";
 import Projects from "./components/Projects";
+import TrustedBy from "./components/TrustedBy";
 
 function App() {
   const arr = useScroll();
@@ -20,6 +21,7 @@ function App() {
       <About vision={vision} strategy={strategy} policy={policy} />
       <Services />
       <Projects />
+      <TrustedBy/>
       <Contact />
       <Footer />
       <Up arr={arr} />
