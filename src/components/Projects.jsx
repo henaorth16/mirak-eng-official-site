@@ -39,7 +39,7 @@ const Projects = () => {
             },
             832: {
               slidesPerView: 2,
-              spaceBetween: 3,
+              spaceBetween: 5,
             },
             1024: {
               slidesPerView: 3,
