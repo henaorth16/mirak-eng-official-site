@@ -2,6 +2,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import SlideCards from './SlideCards';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import image from "../assets/work.avif"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,14 +11,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const notes = [
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
-  { title: "title of the body", body: "this includes most contents of the ouline for this object" },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
 ]
 
 
@@ -25,7 +24,7 @@ const Projects = () => {
   return (
     <div className="my-7 pb-12 bg-gray-100 p-4" id="projects">
       <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
-      <div className='md:w-[80%] m-auto'>
+      <div className='md:w-[80%] md:h-[75vh] m-auto'>
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -38,6 +37,10 @@ const Projects = () => {
               slidesPerView: 1,
               spaceBetween: 2,
             },
+            832: {
+              slidesPerView: 2,
+              spaceBetween: 3,
+            },
             1024: {
               slidesPerView: 3,
               spaceBetween: 5,
@@ -45,9 +48,9 @@ const Projects = () => {
           }}
         >
           {notes.map(note => (
-            <SwiperSlide className='w-40 h-[65vh] bg-gray-100' key={note.title}>
+            <SwiperSlide className='w-[12rem] h-[75vh] md:h-[63vh] bg-gray-100' key={note.title}>
               {({ isNext }) => (
-                <SlideCards isNext={isNext} title={note.title} body={note.body} />
+                <SlideCards image={note.image} isNext={isNext} title={note.title} body={note.body} />
               )}
             </SwiperSlide>
           ))
