@@ -1,39 +1,40 @@
 import { useState } from "react";
+import Header from "./Header";
 const Services = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div id="services" className=" flex flex-col w-full">
-      <h1 className="text-4xl font-bold uppercase text-center mx-5 mb-5">Services</h1>
+    <div id="services" className=" flex flex-col w-full px-7">
+      <Header title="Services"/>
       <div>
-        <ul className="flex w-full p-5">
+        <ul className="flex w-full p-5 justify-between gap-0">
           <li
             className={`${
-              index == 0 ? "bg-logo text-white" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center text-[12px] justify-center mx-3 rounded-sm`}
+              index == 0 ? "bg-logo text-white hover:bg-sky-800" : ""
+            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(0)}
           >
             Supply
           </li>
           <li
             className={`${
-              index == 1 ? "bg-logo text-white" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center text-[12px] justify-center mx-3 rounded-sm`}
+              index == 1 ? "bg-logo text-white hover:bg-sky-800" : ""
+            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(1)}
           >
             Installation
           </li>
           <li
             className={`${
-              index == 2 ? "bg-logo text-white" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center text-[12px] justify-center mx-3 rounded-sm`}
+              index == 2 ? "bg-logo text-white hover:bg-sky-800" : ""
+            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(2)}
           >
             Training
           </li>
           <li
             className={`${
-              index == 3 ? "bg-logo text-white" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center text-[12px] justify-center mx-3 rounded-sm`}
+              index == 3 ? "bg-logo text-white hover:bg-sky-800" : ""
+            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(3)}
           >
             Agency

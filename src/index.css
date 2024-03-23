@@ -4,7 +4,7 @@
 
 :root{
     --swiper-pagination-color: #ffffff;
-    --swiper-pagination-bullet-inactive-color: #666666;
+    --swiper-pagination-bullet-inactive: #1a1a1a46;
     --swiper-pagination-bullet-inactive-opacity: 1;
     --swiper-pagination-bullet-size: 10px;
     --swiper-pagination-bullet-horizontal-gap: 6px;
@@ -46,12 +46,18 @@ nav ul li a:hover::after {
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: white;
+    color: rgb(167, 167, 167);
     padding: 30px;
     border-radius: 50%;
     right: 0;
+    text-shadow: 2px 2px #fff;
 }
-
+.swiper-pagination-bullet{
+    background-color: rgba(10, 84, 221, 0.418);
+}
+.swiper-pagination-bullet-active{
+    background-color: rgb(10, 84, 221);
+}
 .up-arrow{
     width: 35px;
     height: 35px;
@@ -81,7 +87,7 @@ nav ul li a:hover::after {
     color: rgb(22, 22, 22);
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-block: 34px;
 }
 
 .card{
@@ -97,6 +103,7 @@ nav ul li a:hover::after {
     font-size: 20px;
     font-weight: bold;
     color: rgb(18, 18, 18);
+    text-align: center;
 }
 
 .card .image{
