@@ -49,7 +49,7 @@ const NavBar = () => {
 
       <a
         href="#contact"
-        className="bg-logo hidden md:block rounded-full p-2 mr-2 text-white text-xs transition-all duration-500"
+        className="bg-logo hidden md:block rounded-full p-2 px-3 mr-2 text-white text-sm transition-all duration-500"
       >
         CONTACT
       </a>

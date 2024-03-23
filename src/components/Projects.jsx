@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 
 const notes = [
   { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
-  { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
+  { image: image, title: "Title of the body", body: "The government uhsdu hudfh udhf suh suhfusih suhf suh  of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
   { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
   { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
   { image: image, title: "Title of the body", body: "The government of Ethiopia is considering terminating its contract with the giant Chinese state enterprise, the China State Construction Engineering Corporation (CSCEC), over its huge financial adjustment claim to complete the second phase of the Adey Ababa stadium being built in Addis Ababa." },
@@ -22,7 +22,7 @@ const notes = [
 
 const Projects = () => {
   return (
-    <div className="my-7 pb-12 bg-gray-100 p-4" id="projects">
+    <div className="my-7 pb-12 bg-[#f9f9f9] p-4" id="projects">
       <h1 className="text-4xl text-center font-bold mb-6">Projects</h1>
       <div className='md:w-[80%] md:h-[75vh] m-auto'>
         <Swiper
@@ -48,7 +48,7 @@ const Projects = () => {
           }}
         >
           {notes.map(note => (
-            <SwiperSlide className='w-[12rem] h-[75vh] md:h-[63vh] bg-gray-100' key={note.title}>
+            <SwiperSlide className='w-[12rem] h-[75vh] md:h-[63vh] bg-[#f9f9f9]' key={note.title}>
               {({ isNext }) => (
                 <SlideCards image={note.image} isNext={isNext} title={note.title} body={note.body} />
               )}

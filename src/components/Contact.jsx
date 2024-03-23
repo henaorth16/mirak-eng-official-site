@@ -40,6 +40,7 @@ const Contact = () => {
               cols="30"
               rows="7"
             ></textarea>
+            <button className="bg-logo rounded-sm py-2 text-white hover:bg-[rgb(10,130,296)]" type="submit">Submit</button>
           </div>
         </form>
       </div>

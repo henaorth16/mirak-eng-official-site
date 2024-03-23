@@ -49,7 +49,7 @@ nav ul li a:hover::after {
     color: rgb(167, 167, 167);
     padding: 30px;
     border-radius: 50%;
-    right: 0;
+    right: -15px;
     text-shadow: 2px 2px #fff;
 }
 @media screen and (max-width: 768px) {
