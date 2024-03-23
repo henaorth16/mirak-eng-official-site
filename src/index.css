@@ -52,8 +52,14 @@ nav ul li a:hover::after {
     right: 0;
     text-shadow: 2px 2px #fff;
 }
+@media screen and (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+}
 .swiper-pagination-bullet{
-    background-color: rgba(10, 84, 221, 0.418);
+    background-color: rgba(255, 255, 255, 0.418);
 }
 .swiper-pagination-bullet-active{
     background-color: rgb(10, 84, 221);

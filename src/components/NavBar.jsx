@@ -23,7 +23,7 @@ const NavBar = () => {
     >
       <h1 className="flex gap-2 sm:gap-4 items-center font-bold text-[12px] sm:text-[18px]">
         <img
-          className="w-[20px] sm:w-[30px] md:w-[40px] lg:w-[50px]"
+          className="w-[35px] md:w-[48px]"
           src={img}
           alt="Logo"
         />

@@ -6,11 +6,11 @@ const Services = () => {
     <div id="services" className=" flex flex-col w-full px-7">
       <Header title="Services"/>
       <div>
-        <ul className="flex w-full p-5 justify-between gap-0">
+        <ul className="flex w-full md:px-16">
           <li
             className={`${
               index == 0 ? "bg-logo text-white hover:bg-sky-800" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
+            } cursor-pointer w-full h-10 p-1 border flex items-center text-sm md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(0)}
           >
             Supply
@@ -18,7 +18,7 @@ const Services = () => {
           <li
             className={`${
               index == 1 ? "bg-logo text-white hover:bg-sky-800" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
+            } cursor-pointer w-full h-10 p-1 border flex text-sm items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(1)}
           >
             Installation
@@ -26,7 +26,7 @@ const Services = () => {
           <li
             className={`${
               index == 2 ? "bg-logo text-white hover:bg-sky-800" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
+            } cursor-pointer w-full h-10 p-1 border flex text-sm items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(2)}
           >
             Training
@@ -34,7 +34,7 @@ const Services = () => {
           <li
             className={`${
               index == 3 ? "bg-logo text-white hover:bg-sky-800" : ""
-            } cursor-pointer w-full h-10 p-1 border flex items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
+            } cursor-pointer w-full h-10 p-1 border flex text-sm items-center md:text-[14px] justify-center mx-3 rounded-sm hover:bg-gray-100`}
             onClick={() => setIndex(3)}
           >
             Agency
