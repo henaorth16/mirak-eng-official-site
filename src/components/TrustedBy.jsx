@@ -8,10 +8,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import part1 from "../assets/icons/part1.png"
 import part2 from "../assets/icons/part2.jpg"
 import part3 from "../assets/icons/part3.png"
-import part4 from "../assets/icons/part4.jpg"
+import part4 from "../assets/icons/part4.png"
 import part5 from "../assets/icons/part5.jpg"
-import part6 from "../assets/icons/part6.png"
-import part7 from "../assets/icons/part7.png"
+import part6 from "../assets/icons/part6.jpg"
+import part7 from "../assets/icons/part7.jpg"
 import part8 from "../assets/icons/part8.png"
 const imageList = [part1, part2, part3, part4, part5, part6, part7, part8]
 function TrustedBy() {
@@ -22,7 +22,7 @@ function TrustedBy() {
             <Swiper
                 modules={[EffectCoverflow, Autoplay, Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={1}
-                slidesPerView={5}
+                slidesPerView={7}
                 // effect="coverflow"
                 autoplay={{
                     // delay: 1500,
@@ -33,7 +33,11 @@ function TrustedBy() {
                 onSlideChange={() => console.log('slide change')}
             >
                 {imageList.map(item => (
-                    <SwiperSlide key={item}><div className='w-[100px] overflow-hidden'><img className=' object-contain grayscale-[1] bg-blend-screen' src={item} alt="logo" /></div></SwiperSlide>
+                    <SwiperSlide key={item}>
+                        <div className='w-[120px] overflow-hidden'>
+                            <img className=' object-contain grayscale-[1] bg-blend-screen' src={item} alt="logo" />
+                        </div>
+                    </SwiperSlide>
                 ))}
 
             </Swiper>
