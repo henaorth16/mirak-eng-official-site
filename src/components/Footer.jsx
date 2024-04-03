@@ -14,7 +14,7 @@ const [year, setYear] = useState(0);
     <div className="w-full h-auto bg-black relative">
       <div className="flex flex-wrap justify-center">
         <div className="mt-10 w-80 mx-10 p-3">
-          <h1 className="uppercase font-extrabold text-white">
+          <h1 className="uppercase font-extrabold text-logo">
             Find Us On Social Media
           </h1>
           <p className="text-sm text-white mt-10">
@@ -46,30 +46,30 @@ const [year, setYear] = useState(0);
           </ul>
         </div>
         <div className="mt-10 w-80 mx-10 p-3">
-          <h1 className="uppercase text-white font-extrabold">Contacts</h1>
+          <h1 className="uppercase text-logo font-extrabold">Contacts</h1>
           <ul className="text-white text-md mt-10">
             <li className="text-md font-semibold">
-              Phone 1: <span className="text-sm">+251 911 733 782</span>
+              Phone 1: <span className="text-sm opacity-70">+251 911 733 782</span>
             </li>
             <li className="text-md font-semibold">
-              Phone 2: <span className="text-sm">+251 911 763 576</span>
+              Phone 2: <span className="text-sm opacity-70">+251 911 763 576</span>
             </li>
             <li className="text-md font-semibold">
-              Fax: <span className="text-sm">+251 111 579 480</span>
+              Fax: <span className="text-sm opacity-70">+251 111 579 480</span>
             </li>
             <li className="text-md font-semibold">
               P.O.Box:{" "}
-              <span className="text-sm">30335, Addis Ababa, Ethiopia</span>
+              <span className="text-sm opacity-70">30335, Addis Ababa, Ethiopia</span>
             </li>
-            <li className="text-md font-semibold">
-              Email: <span className="text-sm">info@mirakengineering.com</span>
+            <li className="text-md font-semibold ">
+              Email: <span className="text-sm opacity-70">info@mirakengineering.com</span>
             </li>
           </ul>
         </div>
         <div className="mt-10 w-80 mx-10 p-3">
           <ul>
             <li className="text-gray-200 text-sm">
-              <h1 className="text-white text-md font-bold mb-3">
+              <h1 className="text-logo text-md font-bold mb-3">
                 General Manager:
               </h1>
               <p>Sirak Kebede</p>
@@ -77,7 +77,7 @@ const [year, setYear] = useState(0);
               <p>+251 911 733 782</p>
             </li>
             <li className="text-gray-200 text-sm mt-5">
-              <h1 className="text-white font-bold text-md mb-3">
+              <h1 className="text-logo font-bold text-md mb-3">
                 Operation Manger:
               </h1>
               <p>Mintesnot Tsadiku</p>
@@ -94,7 +94,7 @@ const [year, setYear] = useState(0);
         </div>
       </div>
       <div className="w-full h-24 bg-[#111111] flex justify-center items-center mt-30">
-        <p className="text-white font-semibold">Copyright &copy; {year} Mirak Engineering</p>
+        <p className="text-white font-semibold">Copyright &copy; {year} <span className="text-logo font-bold">Mirak</span>  Engineering</p>
       </div>
     </div>
   );

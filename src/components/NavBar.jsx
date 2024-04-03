@@ -23,7 +23,7 @@ const NavBar = () => {
     >
       <h1 className="flex gap-2 sm:gap-4 items-center font-bold text-[12px] sm:text-[18px]">
         <img
-          className="w-[20px] sm:w-[30px] md:w-[40px] lg:w-[50px]"
+          className="w-[35px] md:w-[48px]"
           src={img}
           alt="Logo"
         />
@@ -49,7 +49,7 @@ const NavBar = () => {
 
       <a
         href="#contact"
-        className="bg-logo hidden md:block rounded-full p-2 mr-2 text-white text-xs transition-all duration-500"
+        className="bg-logo hidden md:block rounded-full p-2 px-3 mr-2 text-white text-sm transition-all duration-500"
       >
         CONTACT
       </a>
