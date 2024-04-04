@@ -47,8 +47,8 @@ const Projects = () => {
             },
           }}
         >
-          {notes.map(note => (
-            <SwiperSlide className='w-[12rem] h-[75vh] md:h-[63vh] bg-[#f9f9f9]' key={note.title}>
+          {notes.map((note, index) => (
+            <SwiperSlide className='w-40 h-[65vh] bg-gray-100' key={index}>
               {({ isNext }) => (
                 <SlideCards image={note.image} isNext={isNext} title={note.title} body={note.body} />
               )}

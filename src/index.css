@@ -97,7 +97,7 @@ nav ul li a:hover::after {
 }
 
 .card{
-    width: 350px;
+    /* width: 350px; */
     height: auto;
     box-shadow: 0 0 10px 1px rgb(249, 249, 249);
     padding: 15px;
@@ -108,21 +108,22 @@ nav ul li a:hover::after {
 .card .title{
     font-size: 20px;
     font-weight: bold;
-    color: rgb(18, 18, 18);
+    color: rgb(28, 28, 28);
     text-align: center;
 }
 
 .card .image{
     margin-top: 10px;
-    width: 350px;
+    margin-inline: auto;
     height: 150px;
+    object-fit: cover;
     background-position: center;
     background-size: cover;
 }
 
 .card .desc{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(37, 37, 37);
 }
 
